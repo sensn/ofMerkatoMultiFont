@@ -20,11 +20,13 @@ int main( ){
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
 	// pass in width and height too:
-	theapp->mystr_vec.resize(10, "");
+	//theapp->mystr_vec.resize(10, "");
+	theapp->mystr_vec.reserve(200);
 	//ofApp* theapp = new ofApp();
+
 	ofRunApp(theapp);
 	//ofRunApp(new ofApp());
-
+	//while (1) {}
 }
 
 void tocon() {
